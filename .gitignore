@@ -5,3 +5,4 @@ __pycache__/
 agent/cache/*.json
 agent/output/*.json
 agent/output/*.md
+agent/manual_dry_run.py
