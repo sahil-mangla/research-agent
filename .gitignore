@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+agent/cache/*.json
+agent/output/*.json
+agent/output/*.md
