@@ -34,10 +34,12 @@ def _json_schema_for(output_model: type[BaseModel]) -> dict:
     return schema
 
 
-def call_structured(system: str, user: str, output_model: type[BaseModel], effort: str = "high", max_tokens: int = 8000):
+def call_structured(
+    system: str, user: str, output_model: type[BaseModel], effort: str = "high", max_tokens: int = 8000
+):
     """Single-turn structured-output call using output_config.format. Returns a validated instance of output_model."""
     client = get_client()
-    response = client.messages.create(
+    response = client.messages.create(  # type: ignore[call-overload]
         model=MODEL,
         max_tokens=max_tokens,
         system=system,

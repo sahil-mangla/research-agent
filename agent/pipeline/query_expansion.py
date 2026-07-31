@@ -25,5 +25,6 @@ def expand(problem_statement: str) -> list[str]:
 
 
 if __name__ == "__main__":
-    for q in expand("How can small teams detect data drift in production ML pipelines without a dedicated MLOps platform?"):
+    problem = "How can small teams detect data drift in production ML pipelines without a dedicated MLOps platform?"
+    for q in expand(problem):
         print("-", q)

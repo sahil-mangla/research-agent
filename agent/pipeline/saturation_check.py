@@ -30,7 +30,9 @@ if __name__ == "__main__":
     from agent.pipeline.synthesis import GapCluster
 
     sample = GapCluster(
-        tentative_core_problem="Small ML teams lack lightweight data drift detection without adopting a full MLOps platform.",
+        tentative_core_problem=(
+            "Small ML teams lack lightweight data drift detection without adopting a full MLOps platform."
+        ),
         theme_summary="Papers note existing drift-detection methods assume infrastructure most small teams don't have.",
         supporting_paper_titles=["Example Paper A", "Example Paper B"],
     )
