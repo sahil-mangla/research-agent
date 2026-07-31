@@ -1,0 +1,14 @@
+[tool.ruff]
+line-length = 120
+exclude = ["agent/manual_dry_run.py", "frontend"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+exclude = ["agent/manual_dry_run.py", "frontend", "agent/tests"]
+
+[tool.pytest.ini_options]
+testpaths = ["agent/tests"]
